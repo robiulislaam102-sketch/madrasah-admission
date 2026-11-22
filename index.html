@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>অনলাইন ভর্তি ফরম - ফজুমিয়ার হাট ইসলামিয়া মাদরাসা</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="form-container">
+    <header class="header">
+      <p class="bismillah">বিসমিল্লাহির রাহমানির রাহীম</p>
+      <p class="motto">ইসলামী ও জেনারেল শিক্ষার সমন্বয়ে সু-শীতল জাতি গঠনে একটি দ্বীনি প্রতিষ্ঠান...</p>
+      <h1>ফজুমিয়ার হাট ইসলামিয়া মাদরাসা</h1>
+      <h2>ফজুমিয়ার হাট মা আয়েশা সিদ্দিকা (রাঃ) মহিলা মাদরাসা</h2>
+      <p class="address">ফজুমিয়ার হাট, (পশ্চিম বাজার), কমলনগর, লক্ষ্মীপুর।</p>
+    </header>
+
+    <div class="form-title"><span>ভর্তি ফরম</span></div>
+
+    <form id="admissionForm">
+      <section>
+        <div class="row">
+          <div class="col">
+            <label>শিক্ষার্থীর ধরন</label>
+            <div class="radio-group">
+              <label><input type="radio" name="studentType" value="নতুন" checked> নতুন</label>
+              <label><input type="radio" name="studentType" value="পুরাতন"> পুরাতন</label>
+            </div>
+          </div>
+          <div class="col"><label for="session">শিক্ষাবর্ষ</label><input type="text" id="session" placeholder="যেমন: ২০২৬" required></div>
+          <div class="col"><label for="className">শ্রেণী</label><input type="text" id="className" placeholder="কোন শ্রেণীতে ভর্তি হতে ইচ্ছুক" required></div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="department">বিভাগ</label>
+            <select id="department" required>
+              <option value="">নির্বাচন করুন</option>
+              <option>নূরানী বিভাগ</option><option>নাজেরা বিভাগ</option><option>হিফজ বিভাগ</option><option>কিতাব বিভাগ</option><option>জেনারেল বিভাগ</option>
+            </select>
+          </div>
+          <div class="col"><label for="applicationDate">আবেদনের তারিখ</label><input type="date" id="applicationDate" required></div>
+          <div class="col"><label for="photo">শিক্ষার্থীর ছবি</label><input type="file" id="photo" accept="image/*"></div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section>
+        <div class="row">
+          <div class="col"><label for="studentName">ছাত্র/ছাত্রীর নাম</label><input type="text" id="studentName" placeholder="সম্পূর্ণ নাম লিখুন" required></div>
+          <div class="col"><label for="dob">জন্ম তারিখ</label><input type="date" id="dob" required></div>
+        </div>
+        <div class="row">
+          <div class="col"><label for="fatherName">পিতার নাম</label><input type="text" id="fatherName" placeholder="পিতার নাম লিখুন" required></div>
+          <div class="col"><label for="fatherOccupation">পিতার পেশা</label><input type="text" id="fatherOccupation" placeholder="পিতার পেশা"></div>
+        </div>
+        <div class="row">
+          <div class="col"><label for="motherName">মাতার নাম</label><input type="text" id="motherName" placeholder="মাতার নাম লিখুন" required></div>
+          <div class="col"><label for="motherOccupation">মাতার পেশা</label><input type="text" id="motherOccupation" placeholder="মাতার পেশা"></div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section>
+        <div class="row">
+          <div class="col"><label for="houseName">স্থায়ী ঠিকানা - বাড়ীর নাম</label><input type="text" id="houseName"></div>
+          <div class="col"><label for="village">গ্রাম</label><input type="text" id="village" required></div>
+        </div>
+        <div class="row">
+          <div class="col"><label for="postOffice">পোঃ (ডাকঘর)</label><input type="text" id="postOffice" required></div>
+          <div class="col"><label for="upazila">উপজেলা</label><input type="text" id="upazila" required></div>
+          <div class="col"><label for="district">জেলা</label><input type="text" id="district" required></div>
+        </div>
+        <div class="row">
+          <div class="col"><label for="presentAddress">বর্তমান ঠিকানা</label><input type="text" id="presentAddress"></div>
+          <div class="col"><label for="nationality">জাতীয়তা</label><input type="text" id="nationality" value="বাংলাদেশী" required></div>
+        </div>
+        <div class="row">
+          <div class="col"><label for="guardianPhone">অভিভাবকের মোবাইল নম্বর</label><input type="tel" id="guardianPhone" placeholder="01XXXXXXXXX" pattern="01[0-9]{9}" required></div>
+          <div class="col"><label for="guardianName">অভিভাবকের নাম</label><input type="text" id="guardianName" required></div>
+        </div>
+      </section>
+
+      <div class="button-group">
+        <button type="submit" class="btn btn-submit">জমা দিন</button>
+        <button type="button" id="whatsappBtn" class="btn btn-whatsapp">WhatsApp-এ পাঠান</button>
+      </div>
+      <div id="successMsg">আবেদনটি সফলভাবে প্রস্তুত হয়েছে!</div>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
